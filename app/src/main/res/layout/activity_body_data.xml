@@ -1,0 +1,215 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_700"
+    tools:context="com.thea.itailor.BodyDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:id="@+id/rl_toolbar"
+        android:background="@mipmap/body_background">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:paddingRight="16dp"
+            android:layout_marginTop="24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_below="@+id/rl_toolbar"
+        android:id="@+id/data_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/body_length"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+
+            <SeekBar
+                android:id="@+id/sb_body_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:max="60"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_body_length"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chest"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+
+            <SeekBar
+                android:id="@+id/sb_chest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:max="70"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_chest"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/waist_line"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+
+            <SeekBar
+                android:id="@+id/sb_waist_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:max="65"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_waist_line"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hip_line"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+
+            <SeekBar
+                android:id="@+id/sb_hip_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:max="50"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_hip_line"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shoulder"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+
+            <SeekBar
+                android:id="@+id/sb_shoulder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:max="40"
+                android:layout_weight="1"
+                android:progress="20"/>
+
+            <TextView
+                android:id="@+id/tv_shoulder"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/arm_length"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical" />
+
+            <SeekBar
+                android:id="@+id/sb_arm_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center_vertical"
+                android:max="60"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_arm_length"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

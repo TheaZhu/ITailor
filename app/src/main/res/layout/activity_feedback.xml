@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/red_700"
+    tools:context="com.thea.itailor.FeedbackActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset"
+                android:id="@+id/btn_reset"
+                android:textSize="18sp"
+                android:background="@drawable/normal_btn_background"
+                android:textColor="@drawable/normal_tv_color"
+                android:layout_marginRight="16dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:id="@+id/btn_submit"
+                android:textSize="18sp"
+                android:background="@drawable/accent_btn_background"
+                android:textColor="@drawable/accent_tv_color"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:id="@+id/et_feedback"
+            android:background="@drawable/et_background"
+            android:padding="16dp"
+            android:gravity="top"
+            android:layout_marginTop="16dp"
+            android:hint="@string/et_fb_hint"/>
+
+    </LinearLayout>
+
+</LinearLayout>

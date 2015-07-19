@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thea.itailor" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+    <uses-feature android:name="android.hardware.Camera.autofocus" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_sewing_white"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.NoActionBar" >
+        <activity
+            android:name=".ShowBodyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ArmoireActivity"
+            android:label="@string/my_armoire" >
+        </activity>
+        <activity
+            android:name=".BodyDataActivity"
+            android:label="@string/body_dataset"
+            android:parentActivityName=".ArmoireActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+        <activity
+            android:name=".RecommendActivity"
+            android:label="@string/personal_recommend"
+            android:parentActivityName=".ArmoireActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+        <activity
+            android:name=".CollectionActivity"
+            android:label="@string/my_collection"
+            android:parentActivityName=".ArmoireActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".ArmoireActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login"
+            android:parentActivityName=".ArmoireActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".UserControlActivity"
+            android:label="@string/user_control"
+            android:parentActivityName=".SettingsActivity" >
+        </activity>
+        <activity
+            android:name=".ScanActivity"
+            android:label="@string/scan"
+            android:parentActivityName=".ArmoireActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/feedback"
+            android:parentActivityName=".ArmoireActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thea.itailor.ArmoireActivity" />
+        </activity>
+    </application>
+
+</manifest>

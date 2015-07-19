@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/red_700"
+    tools:context="com.thea.itailor.SettingsActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/rl_user_control"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/nav_view_background"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_control"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/grey_900"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/user_control"
+                app:border_width="1dp"
+                app:border_color="#ffffffff"
+                android:src="@mipmap/head_icon"
+                android:id="@+id/civ_small_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/grey_200" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/auto_sync"
+            android:id="@+id/switch_auto_sync"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:tag="auto_sync"
+            android:textColor="@color/grey_900"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_200" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/display_notification"
+            android:id="@+id/switch_notification"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:checked="true"
+            android:tag="display_notification"
+            android:textColor="@color/grey_900"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/grey_200" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/rl_secure_control"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/secure_control"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/grey_900"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/secure_control"
+                android:src="@mipmap/ic_action_not_secure_grey" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/grey_200" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/rl_realsense_manage"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/realsense"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/grey_900"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/grey_400"
+                android:text="@string/closed"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/grey_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/tv_clear_cache"
+            android:text="@string/clear_cache"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:textColor="@color/grey_900"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/tv_check_update"
+            android:text="@string/check_update"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:textColor="@color/grey_900"
+            android:background="@drawable/nav_view_background"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_200" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/tv_version_information"
+            android:text="@string/version_information"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:textColor="@color/grey_900"/>
+    </LinearLayout>
+
+</LinearLayout>

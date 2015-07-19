@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">iTailor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    //Personal Center
+    <string name="personal_center">Personal Center</string>
+    <string name="scan">Scan</string>
+    <string name="personal_recommend">Personal Recommend</string>
+    <string name="my_armoire">My Armoire</string>
+    <string name="body_dataset">Body Dataset</string>
+    <string name="my_collection">My Collection</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="exit">Exit</string>
+
+    <string name="center_open">Center Open</string>
+    <string name="center_close">Center Close</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="before_login">Not already logged in</string>
+    <string name="go_login">Go Login</string>
+
+    //Settings
+    <string name="user_control">User Control</string>
+    <string name="auto_sync">Auto Sync</string>
+    <string name="display_notification">Display Notification</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="check_update">Check for Update</string>
+    <string name="version_information">Version Information</string>
+    <string name="secure_control">Secure Control</string>
+    <string name="realsense">RealSense</string>
+    <string name="closed">Closed</string>
+
+    <string name="tops">Tops</string>
+    <string name="pants">Pants</string>
+
+    <string name="cancel">CANCEL</string>
+    <string name="submit">SUBMIT</string>
+    <string name="affirm">AFFIRM</string>
+    <string name="done">DONE</string>
+    <string name="reset">RESET</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="headIcon">Head Icon</string>
+    <string name="username">Username</string>
+
+    <string name="action_pattern">Pattern</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_collect">Collect</string>
+    <string name="action_search">Search</string>
+    <string name="action_new_group">NEW GROUP</string>
+
+    <string name="body_length">Body Length  </string>
+    <string name="waist_height">Waist Height </string>
+    <string name="crotch_height">Crotch Height</string>
+    <string name="chest">Chest        </string>
+    <string name="waist_line">Waist Line   </string>
+    <string name="hip_line">Hip Line     </string>
+    <string name="leg_length">Leg Length   </string>
+    <string name="shoulder">Shoulder     </string>
+    <string name="arm_length">Arm Length   </string>
+
+    <string name="description">Description</string>
+    <string name="error_same_name">Update error\nThe name already exists</string>
+
+    <string-array name="group">
+        <item>New</item>
+        <item>Favorite</item>
+        <item>Tops</item>
+        <item>Pants</item>
+        <item>Skirt</item>
+    </string-array>
+
+    <string name="cloth">Cloth</string>
+
+    <string name="group_position">group_position</string>
+    <string name="child_position">child_position</string>
+
+    //Login
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password(optional)</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
+    <string name="qq_login">QQ Login</string>
+    <string name="fail_login">Fail login, please try again!</string>
+    <string name="successful_login">Successful Login</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="log_out">Log out</string>
+    <string name="successful_logout">Successful Logout</string>
+    <string name="already_logout">Already Logout</string>
+
+    //scan
+    <string name="label_name">Name: </string>
+    <string name="new_name">New Name</string>
+    <string name="label_group_name">Group name: </string>
+    <string name="newest">Newest</string>
+    <string name="successful_save">Successful save</string>
+    <string name="itailor_seal">iTailor Seal</string>
+
+    //Feedback
+    <string name="et_fb_hint">Your feedback</string>
+
+    <string-array name="group_edit">
+        <item>Rename</item>
+        <item>New</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string-array name="child_edit">
+        <item>Rename</item>
+        <item>Move</item>
+        <item>Delete</item>
+    </string-array>
+
+    <string name="confirm">CONFIRM</string>
+    <string name="search_hint">Search&#8230;</string>
+
+</resources>

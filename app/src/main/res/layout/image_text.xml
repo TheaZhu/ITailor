@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/iv_image_cloth"
+        android:background="@null"
+        android:contentDescription="@string/cloth"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#50ffffff"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_image_description"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+</FrameLayout>

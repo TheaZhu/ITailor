@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.thea.itailor.ArmoireActivity">
+
+    <item android:id="@+id/action_pattern" android:title="@string/action_pattern"
+        android:icon="@mipmap/ic_action_view_as_grid_white"
+        android:orderInCategory="1" app:showAsAction="always" />
+
+    <item android:id="@+id/action_new_group" android:title="@string/action_new_group"
+        android:icon="@mipmap/ic_action_new_white"
+        android:orderInCategory="2" app:showAsAction="always" />
+</menu>

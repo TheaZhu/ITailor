@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/build.gradle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/BodyRenderer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/LoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/db/ClothDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/entities/LocationParams.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/entities/Material.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/entities/TDModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/entities/TDModelPart.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/ImageHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/MTLParser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/MatrixHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/OBJParser.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/ShaderHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/TextResourceReader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/TextureHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/thea/itailor/utils/Triangulator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw" charset="UTF-8" />
+  </component>
+</project>
